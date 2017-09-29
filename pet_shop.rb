@@ -57,3 +57,7 @@ def add_pet_to_stock(pet_shop, add_pet)
     #the value of pet_shop :name  <<
   # end
 end
+
+def customer_pet_count(customers)
+  return customers[:pets].length
+end
