@@ -52,12 +52,13 @@ def remove_pet_by_name(pet_shop, name)
 end
 
 def add_pet_to_stock(pet_shop, add_pet)
-  # for pet in pet_shop
     pet_shop[:pets] << add_pet
-    #the value of pet_shop :name  <<
-  # end
 end
 
 def customer_pet_count(customers)
   return customers[:pets].length
+end
+
+def add_pet_to_customer(customers, add_pet)
+  customers[:pets] << add_pet
 end
